@@ -1,0 +1,18 @@
+{
+  "name": "cds serve",
+  "request": "launch",
+  "type": "node",
+  "cwd": "${workspaceFolder}",
+  "runtimeExecutable": "npx",
+  "args": [
+    "cds",
+    "serve",
+    "--with-mocks",
+    "--in-memory?"
+  ],
+  "skipFiles": [
+    "<node_internals>/**"
+  ],
+  "version": "0.2.0",
+  "configurations": []
+}

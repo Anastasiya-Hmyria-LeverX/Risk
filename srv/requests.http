@@ -1,0 +1,22 @@
+@hostname=localhost
+@port=4004
+@host={{hostname}}:{{port}}
+GET http://{{host}}/odata/v4/service/risk/getItemsWithQuantity(quantity=2)
+
+###
+POST http://{{host}}/odata/v4/service/risk/createItem
+Content-Type: application/json
+
+{
+    "title": "test item 5",
+    "descr": "some descripton 5",
+    "quantity": 160
+}
+
+###
+###
+GET http://{{host}}/odata/v4/service/risk/getProducts()
+
+###
+GET http://{{host}}/odata/v4/service/risk/getFromExpress()
+Content-Type: application/json
